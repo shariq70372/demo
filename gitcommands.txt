@@ -1,0 +1,32 @@
+- run command >> git init ( it will initializr github in the respective direcotry with .git hidden folder)
+- make sure your username & email configuration is setup locally
+>> git config --global user.name "<github user name should be there>"
+>> git config --global user.email "<your email of github>"
+
+- to validate above configuration run following commands
+>> git config --global user.name
+>> git config --global user.email
+
+
+…or create a new repository on the command line
+echo "# github-learn-repo" >> README.md
+git init (initalize/reinitalize the git)
+git status (shows all untracked files)
+git add README.md OR git add -A OR git add . ( to add file/files changes to be committed)
+git commit -m "first commit" ( commit those added file/files using git add command)
+git branch -M main (rename the branch to "main" from "master")
+git remote add origin https://github.com/aiwithqasim/github-learn-repo.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/aiwithqasim/github-learn-repo.git
+git branch -M main
+git push -u origin main
+
+3- BRANCHING
+
+git branch -a (status about number of branches & working branch)
+git checkout -b task/qasim (create new branch & go to that branch)
+git add .. commit .. push
+
+- on git remote you can create pull request to merger yo main branch
