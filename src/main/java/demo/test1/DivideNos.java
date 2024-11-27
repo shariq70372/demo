@@ -22,6 +22,7 @@ public class DivideNos {
             System.out.println("Result: " + result);
         } catch (ArithmeticException e) {
             System.out.println("Error: Division by zero is not allowed.");
+            System.out.println("Enter Non Zero Number.");
         }
         return a / b;
     }
